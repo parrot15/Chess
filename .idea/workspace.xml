@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="962043d7-c69c-4347-9416-d1cc8bd6f97d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Chess$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Chess$10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Chess$11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Chess$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Chess$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Chess$4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Chess$5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Chess$6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Chess$7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Chess$8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Chess$9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Chess$Board.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Chess$Move.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Chess.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/BlackBishop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/BlackKing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/BlackKnight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/BlackPawn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/BlackQueen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/BlackRook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/WhiteBishop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/WhiteKing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/WhiteKnight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/WhitePawn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/WhiteQueen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/WhiteRook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chess.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Chess.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/src/Chess.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2058">
-              <caret line="504" column="83" lean-forward="true" selection-start-line="504" selection-start-column="83" selection-end-line="504" selection-end-column="83" />
+              <caret line="504" column="83" lean-forward="false" selection-start-line="504" selection-start-column="83" selection-end-line="504" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2224#2230#0" expanded="true" />
@@ -605,34 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2224#2230#0" expanded="true" />
-            <element signature="e#3411#4087#0" expanded="true" />
-            <element signature="e#4086#4087#0" expanded="true" />
-            <element signature="e#4708#5533#0" expanded="true" />
-            <element signature="e#5532#5533#0" expanded="true" />
-            <element signature="e#6245#10320#0" expanded="true" />
-            <element signature="e#10319#10320#0" expanded="true" />
-            <element signature="e#11388#24520#0" expanded="true" />
-            <element signature="e#11585#11645#0" expanded="false" />
-            <element signature="e#24519#24520#0" expanded="true" />
-            <element signature="e#24850#25671#0" expanded="true" />
-            <element signature="e#25670#25671#0" expanded="true" />
-            <element signature="e#26299#27115#0" expanded="true" />
-            <element signature="e#27114#27115#0" expanded="true" />
-            <element signature="method#printMatrix#0;class#Chess#0" expanded="false" />
-            <element signature="e#61283#61336#0" expanded="false" />
-            <element signature="e#67093#67126#0" expanded="false" />
-            <element signature="method#choosePawnTransformation#0;class#Chess#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/javax/swing/JFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -741,13 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="62" column="16" lean-forward="false" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chess.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -953,10 +884,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chess.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Chess.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2058">
-          <caret line="504" column="83" lean-forward="true" selection-start-line="504" selection-start-column="83" selection-end-line="504" selection-end-column="83" />
+          <caret line="504" column="83" lean-forward="false" selection-start-line="504" selection-start-column="83" selection-end-line="504" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2224#2230#0" expanded="true" />
