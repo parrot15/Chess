@@ -369,7 +369,7 @@ public class Chess extends JFrame {
                         for (int i = 0; i < piecePositions.length; i++) {
                             for (int ii = 0; ii < piecePositions[i].length; ii++) {
                                 if (piecePositions[i][ii] != null) {
-                                    if (piecePositions[i][ii].charAt(1) == 'k') {
+                                    if (piecePositions[i][ii].charAt(1) != 'k') {
                                         if (isWhiteTurn && piecePositions[i][ii].charAt(0) == 'b') {
                                             movableTilesForWhiteKing[i][ii] = 'x';
 //                                        movableTilesForBlackKing[i][ii] = 'x';
@@ -382,6 +382,7 @@ public class Chess extends JFrame {
                                         movableTilesForBlackKing[i][ii] = 'x';
                                     }
                                 }
+
                                 // not working properly when pieces are captured
 //                                if (piecePositions[i][ii] != null) {
 //                                    if ((isWhiteTurn && piecePositions[i][ii].charAt(0) == 'b') ||
@@ -567,6 +568,11 @@ public class Chess extends JFrame {
                     for (int i = 1; currentPosX - i >= 0 && currentPosY + i < 8; i++) {  // diagonal northeast
                         if (piecePositions[currentPosX - i][currentPosY + i] != null) {
                             break;
+//                            if (piecePositions[currentPosX - i][currentPosY + i].charAt(1) == 'k') {
+//                                movableTilesForBlackKing[currentPosX - i][currentPosY + i] = 'x';
+//                            } else {
+//                                break;
+//                            }
                         } else {
                             movableTilesForBlackKing[currentPosX - i][currentPosY + i] = 'x';
                         }
@@ -574,6 +580,11 @@ public class Chess extends JFrame {
                     for (int i = 1; currentPosX + i < 8 && currentPosY + i < 8; i++) {  // diagonal southeast
                         if (piecePositions[currentPosX + i][currentPosY + i] != null) {
                             break;
+//                            if (piecePositions[currentPosX + i][currentPosY + i].charAt(1) == 'k') {
+//                                movableTilesForBlackKing[currentPosX + i][currentPosY + i] = 'x';
+//                            } else {
+//                                break;
+//                            }
                         } else {
                             movableTilesForBlackKing[currentPosX + i][currentPosY + i] = 'x';
                         }
@@ -581,6 +592,11 @@ public class Chess extends JFrame {
                     for (int i = 1; currentPosX + i < 8 && currentPosY - i >= 0; i++) {  // diagonal southwest
                         if (piecePositions[currentPosX + i][currentPosY - i] != null) {
                             break;
+//                            if (piecePositions[currentPosX + i][currentPosY - i].charAt(1) == 'k') {
+//                                movableTilesForBlackKing[currentPosX + i][currentPosY - i] = 'x';
+//                            } else {
+//                                break;
+//                            }
                         } else {
                             movableTilesForBlackKing[currentPosX + i][currentPosY - i] = 'x';
                         }
@@ -588,6 +604,11 @@ public class Chess extends JFrame {
                     for (int i = 1; currentPosX - i >= 0 && currentPosY - i >= 0; i++) {  // diagonal northwest
                         if (piecePositions[currentPosX - i][currentPosY - i] != null) {
                             break;
+//                            if (piecePositions[currentPosX - i][currentPosY - i].charAt(1) == 'k') {
+//                                movableTilesForBlackKing[currentPosX - i][currentPosY - i] = 'x';
+//                            } else {
+//                                break;
+//                            }
                         } else {
                             movableTilesForBlackKing[currentPosX - i][currentPosY - i] = 'x';
                         }
@@ -820,7 +841,8 @@ public class Chess extends JFrame {
                         }
                     }
                     for (int i = 1; currentPosX - i >= 0 && currentPosY - i >= 0; i++) {  // diagonal northwest
-                        if (piecePositions[currentPosX - i][currentPosY - i] != null) {
+                        if (piecePositions[currentPosX - i][currentPosY - i] != null && piecePositions[currentPosX -
+                                i][currentPosX - i].charAt(1) != 'k') {
                             break;
                         } else {
                             movableTilesForWhiteKing[currentPosX - i][currentPosY - i] = 'x';
@@ -1039,15 +1061,15 @@ public class Chess extends JFrame {
 //		return false;
 //	}
 
-	public boolean isKingUnderCheck(int kingX, int kingY) {
+    public boolean isKingUnderCheck(int kingX, int kingY) {
         if (isWhiteTurn) {
             return movableTilesForWhiteKing[kingX][kingY] == 'x';
         } else {
             return movableTilesForBlackKing[kingX][kingY] == 'x';
         }
-	}
+    }
 
-	public boolean isKingInCheckmate(int kingX, int kingY) {
+    public boolean isKingInCheckmate(int kingX, int kingY) {
         /* Do every possible legal move for each of the pieces with the same alliance of the king that
         isKingInCheckmate() is being called for.
 
@@ -1181,7 +1203,7 @@ public class Chess extends JFrame {
         }
     }
 
-	public boolean isCapturable() {
+    public boolean isCapturable() {
         return true;
     }
 
@@ -1358,11 +1380,24 @@ public class Chess extends JFrame {
 //        piecePositions[5][5] = "wk";
 //        piecePositions[3][3] = "bk";
 
-        piecePositions[7][0] = "wr";
-        piecePositions[7][7] = "wr";
-        piecePositions[4][4] = "bk";
-        piecePositions[1][1] = "wk";
-        piecePositions[3][3] = "bq";
+//        piecePositions[7][7] = "wk";
+
+//        piecePositions[2][2] = "bb";
+        piecePositions[4][4] = "bb";
+
+        piecePositions[2][2] = "wk";
+        piecePositions[6][2] = "br";
+        piecePositions[6][6] = "bp";
+        piecePositions[2][6] = "bq";
+
+//        piecePositions[5][2] = "bk";
+//        piecePositions[5][5] = "wq";
+
+//        piecePositions[7][0] = "wr";
+//        piecePositions[7][7] = "wr";
+//        piecePositions[4][4] = "bk";
+//        piecePositions[1][1] = "wk";
+//        piecePositions[3][3] = "bq";
 
 //        piecePositions[2][0] = "br";
 //        piecePositions[4][3] = "wk";
